@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $("form").submit(function(event){
     $("#suggestion").empty();
-    var vacationOregon = $("input[name=]:checked").val();
-    var readingNapping = $("input[name=]:checked").val();
-    var city = $("input[name=]:checked").val();
-    var camping = $("input[name=]:checked").val();
-    var ocean = $("input[name=]:checked").val();
+    var vacationOregon = $("input[name=vacationOregonQuestion]:checked").val();
+    var readingNapping = $("input[name=readingNappingQuestion]:checked").val();
+    var city = $("input[name=cityQuestion]:checked").val();
+    var camping = $("input[name=campingQuestion]:checked").val();
+    var ocean = $("input[name=oceanQuestion]:checked").val();
     if (vacationOregon === "yes"){
       if (readingNapping === "yes"){
         if (city === "yes"){
