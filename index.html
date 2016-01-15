@@ -25,114 +25,121 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="navbar-brand">Vacation Suggester</a>
+          <a href="index.html" class="navbar-brand">Nathan's Vacation Suggester</a>
         </div>
       </div>
     </nav>
-
-    <!-- Form Content -->
     <div class="container">
       <div class="row">
-        <div class="col-sm-8">
-          <form>
-
-            <fieldset id="vacationOregonQuestion">
-              <p>
-                Do you want to vacation in Oregon?
-              </p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="vacationOregonQuestion" value="yes">
-                  Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="vacationOregonQuestion" value="no">
-                  No
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset id="readingNappingQuestion">
-              <p>
-                Does your ideal vacation involve spending hours reading books and napping?
-              </p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="readingNappingQuestion" value="yes">
-                  Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="readingNappingQuestion" value="no">
-                  No
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset id="cityQuestion">
-              <p>
-                Do you want to be in a city for your vacation?
-              </p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="cityQuestion" value="yes">
-                  Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="cityQuestion" value="no">
-                  No
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset id="campingQuestion">
-              <p>
-                Do you like camping?
-              </p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="campingQuestion" value="yes">
-                  Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="campingQuestion" value="no">
-                  No
-                </label>
-              </div>
-            </fieldset>
-
-            <fieldset id="oceanQuestion">
-              <p>
-                Do you like the ocean?
-              </p>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="oceanQuestion" value="yes">
-                  Yes
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="oceanQuestion" value="no">
-                  No
-                </label>
-              </div>
-            </fieldset>
-
-
-
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>
-        </div>
         <div class="col-sm-4">
-          <div id="suggestion"></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">Questions</div>
+            <div class="panel-body">
+              <form>
+                <fieldset id="vacationOregonQuestion">
+                  <p>
+                    Do you want to vacation in Oregon?
+                  </p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="vacationOregonQuestion" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="vacationOregonQuestion" value="no">
+                      No
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset id="readingNappingQuestion">
+                  <p>
+                    Does your ideal vacation involve spending hours reading books and napping?
+                  </p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="readingNappingQuestion" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="readingNappingQuestion" value="no">
+                      No
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset id="cityQuestion">
+                  <p>
+                    Do you want to be in a city for your vacation?
+                  </p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="cityQuestion" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="cityQuestion" value="no">
+                      No
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset id="campingQuestion">
+                  <p>
+                    Do you like camping?
+                  </p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="campingQuestion" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="campingQuestion" value="no">
+                      No
+                    </label>
+                  </div>
+                </fieldset>
+
+                <fieldset id="oceanQuestion">
+                  <p>
+                    Do you like the ocean?
+                  </p>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="oceanQuestion" value="yes">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="oceanQuestion" value="no">
+                      No
+                    </label>
+                  </div>
+                </fieldset>
+
+
+
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div class="panel panel-default">
+            <div class="panel-heading">Results</div>
+            <div class="panel-body">
+              <div id="suggestion"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

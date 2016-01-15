@@ -9,16 +9,16 @@ $(document).ready(function(){
     if (vacationOregon === "yes"){
       if (readingNapping === "yes"){
         if (city === "yes"){
-          $("#suggestion").append("<p>You should find a AirBnB place in a cool Portland neighborhood and spend your non reading time finding great food and drink in the city</p>");
+          $("#suggestion").append("<p>You should find a place to stay in Portland!</p><img src='img/portland.jpg' alt='A picture of Portland Oregon'>");
         } else {
           if (camping === "yes" && ocean === "yes"){
-            $("#suggestion").append("<p>Camp on the Oregon coast</p>");
+            $("#suggestion").append("<p>You should camp on the Oregon coast!</p><img src='img/coast.jpg' alt='A picture of the oregon coast'>");
           } else if (camping === "yes" && ocean === "no") {
-            $("#suggestion").append("<p>Camp in the mountains</p>");
+            $("#suggestion").append("<p>You should camp in the mountains!</p><img src='img/mountain2.jpg' alt='A picture of a mountain'>");
           } else if (camping === "no" && ocean === "yes"){
-            $("#suggestion").append("<p>Rent a house in Pacific City on the coast</p>");
+            $("#suggestion").append("<p>You should rent a house in Pacific City on the coast!</p><img src='img/beachhouse.jpg' alt='A beach house'>");
           } else {
-            $("#suggestion").append("<p>Rent cabin in the mountains</p>");
+            $("#suggestion").append("<p>You should rent a cabin in the mountains!</p><img src='img/mountain.jpg' alt='A picture of mountains'>");
           }
         }
       } else {

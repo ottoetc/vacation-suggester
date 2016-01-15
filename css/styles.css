@@ -1,6 +1,12 @@
 body {
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .container {
   max-width: 1000px;
+}
+.panel-body {
+  min-height: 540px;
+}
+img {
+  max-width: 100%;
 }
